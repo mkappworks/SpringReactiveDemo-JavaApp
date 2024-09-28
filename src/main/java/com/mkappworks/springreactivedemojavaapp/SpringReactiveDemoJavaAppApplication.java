@@ -10,4 +10,18 @@ public class SpringReactiveDemoJavaAppApplication {
         SpringApplication.run(SpringReactiveDemoJavaAppApplication.class, args);
     }
 
+//    @Bean
+//    public CommandLineRunner runner(StudentRepository repository) {
+//        return args -> {
+//            for (int i = 0; i < 3000; i++) {
+//                repository.save(
+//                        Student.builder()
+//                                .firstName("Test" + i)
+//                                .lastName("test" + i)
+//                                .age(i)
+//                                .build()
+//                ).subscribe();
+//            }
+//        };
+//    }
 }
